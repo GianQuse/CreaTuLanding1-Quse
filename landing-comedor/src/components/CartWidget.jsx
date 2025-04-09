@@ -7,5 +7,5 @@ function CartWidget() {
     );
 
 }
-im
+
 export default CartWidget;
