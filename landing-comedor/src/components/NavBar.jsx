@@ -1,6 +1,6 @@
 import CartWidget from "./CartWidget";
 
-function NavBar() {
+function NavBar({cantidad}) {
     return (
         <nav>
             <ul>
@@ -9,7 +9,7 @@ function NavBar() {
                 <li><a href="#">Contacto</a></li>
                 <li><a href="#">Sobre Nosotros</a></li>
             </ul>
-            <CartWidget />
+            <CartWidget cantidad={cantidad} />
         </nav>
     )
 }

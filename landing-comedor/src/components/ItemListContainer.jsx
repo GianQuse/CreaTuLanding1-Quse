@@ -1,12 +1,15 @@
-function ItemListContainer(props) {
+import Boton from "./Boton"
+
+function ItemListContainer({saludo, texto, sumar, restar, contador}) {
     return (
         <>
             <div className="container">
-                <h1>{props.saludo}</h1>
-                <h2>{props.texto}</h2>
+                <h1>{saludo}</h1>
+                <h2>{texto}</h2>
+                <Boton sumar={sumar} restar={restar} contador={contador}/>
             </div>
         </>
     )
 }
 
-export default ItemListContainer
+export default ItemListContainer;
